@@ -22,7 +22,7 @@ def gdn(indictor):
     if indictor == 'Nation':
         return(['England','Northern Ireland','Scotland','Wales'])
     elif indictor == 'Region':
-        return(['East Midland','East of England','London','North East','North West','South East','South West','West Midlands','Yorkshire and The Humber'])
+        return(['East Midlands','East of England','London','North East','North West','South East','South West','West Midlands','Yorkshire and The Humber'])
     elif indictor == 'LTLA':
         data = gdn_API()
         data_featues = data['features']
