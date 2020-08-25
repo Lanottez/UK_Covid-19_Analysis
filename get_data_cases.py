@@ -10,7 +10,6 @@ def get_data(url):
 
 
 def gdc(areaType,areaName):
-<<<<<<< HEAD
     if areaType == 'Nation':
         endpoint = (
             'https://api.coronavirus.data.gov.uk/v1/data?'
@@ -29,17 +28,6 @@ def gdc(areaType,areaName):
             areaName
             +'&structure={"date":"date","newCasesByPublishDate":"newCasesBySpecimenDate"}'
         )
-=======
-    
-    endpoint = (
-        'https://api.coronavirus.data.gov.uk/v1/data?'
-        'filters=areaType=' +
-        areaType
-        +';areaName='+
-        areaName
-        +'&structure={"date":"date","newCasesBySpecimenDate":"newCasesBySpecimenDate"}'
-    )
->>>>>>> parent of 20ddcfe... Updated
         
     data = get_data(endpoint)
     return data
