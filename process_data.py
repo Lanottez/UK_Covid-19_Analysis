@@ -8,7 +8,7 @@ def pro_da(areaType,areaName):
         data_raw = gdc(areaType,areaName[index_1])
         data = data_raw['data']
         for index_2 in list(range(8)):
-            date= data[index_2]['date'][5:]
+            # date= data[index_2]['date'][5:]
             newCasesByPublishDate = data[index_2]['newCasesByPublishDate']
             nation_data[areaName[index_1]][date] = newCasesByPublishDate
             if not date in date_list:

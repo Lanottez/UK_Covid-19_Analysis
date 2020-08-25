@@ -41,7 +41,7 @@ def gdc(areaType,areaName):
             areaType
             +';areaName='+
             areaName
-            +'&structure={"date":"date","newCasesByPublishDate":"newCasesByPublishDate"}'
+            +'&structure={"date":"date","newCasesByPublishDate":"newCasesBySpecimenDate"}'
         )
         
     print("Reading ",areaName)

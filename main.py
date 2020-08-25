@@ -3,7 +3,7 @@ from process_data import pro_da
 from draw_pretty_table import dpt
 
 
-areaType = 'Nation'
+areaType = 'UTLA'
 areaName = gdn(areaType)
 # if 'Shropshire' in areaName:
 #     areaName.remove('Shropshire')
