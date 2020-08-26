@@ -44,7 +44,7 @@ def gdc(areaType,areaName):
             +'&structure={"date":"date","newCasesByPublishDate":"newCasesByPublishDate"}'
         )
         
-    print("Reading ",areaName)
+    print("Reading",areaName)
     data = get_data(endpoint)
 
     return data
