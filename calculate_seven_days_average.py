@@ -23,7 +23,13 @@ def cal_se_da_av(nation_data,date_list):
     sda_n5 = round(sum(cases_list[5:12])/7)
     sda_n6 = round(sum(cases_list[6:13])/7)
     sda_list = [sda_0,sda_n1,sda_n2,sda_n3,sda_n4,sda_n5,sda_n6]
-    sda_diff_list = [sda_0-sda_n1,sda_n1-sda_n2,sda_n2-sda_n3,sda_n3-sda_n4,sda_n4-sda_n5,sda_n5-sda_n6,'-']
-    array_list = [print_array(sda_0,sda_n1),print_array(sda_n1,sda_n2),print_array(sda_n2,sda_n3),print_array(sda_n3,sda_n4),print_array(sda_n4,sda_n5),print_array(sda_n5,sda_n6),' ']
+    sda_diff_list = []
+    array_list = []
+    for index in range(len(sda_list)-1):
+        sda_diff_list.append('('+str(sda_list[index] - sda_list[index+1])+')')
+        array_list.append(str(print_array(sda_list[index],sda_list[index+1])))
+    sda_diff_list.append(' ')
+    array_list.append(' ')
+    print(cases_list)
+    print(sda_list)
     return [sda_list,sda_diff_list,array_list]
-
